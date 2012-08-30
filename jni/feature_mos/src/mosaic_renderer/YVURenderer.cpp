@@ -113,6 +113,7 @@ bool YVURenderer::DrawTexture()
 
         checkGlError("glDrawElements");
 
+        glFlush();
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
         succeeded = true;
     } while (false);
